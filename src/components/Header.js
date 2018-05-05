@@ -14,7 +14,9 @@ class Header extends React.Component {
         <Link to="/">
           new
         </Link>
-        <Link to="/search"Search></Link>
+        {/* <Link to="/top">Top</Link> */}
+        <br/>
+        <Link to="/search">Search</Link>
         {authToken && (
           <div>
             <Link to="/create">
@@ -31,7 +33,7 @@ class Header extends React.Component {
               this.props.history.push(`/`)
             }}
           >
-            logout
+            <button>logout</button>
           </div>
         ) : (
           <Link to="/login">

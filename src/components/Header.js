@@ -14,9 +14,9 @@ class Header extends React.Component {
         <Link to="/">
           new
         </Link>
+        <Link to="/search"Search></Link>
         {authToken && (
           <div>
-            <div>|</div>
             <Link to="/create">
               submit
             </Link>
